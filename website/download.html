@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Download Raaye</title>
+  <style>
+    :root { color-scheme: light; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: linear-gradient(135deg, #f5f9ff 0%, #eef4ff 100%);
+      color: #111827;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+    .card {
+      max-width: 480px;
+      width: 100%;
+      background: #fff;
+      border-radius: 24px;
+      box-shadow: 0 24px 60px rgba(15, 23, 42, 0.12);
+      padding: 36px 32px;
+      text-align: center;
+    }
+    .badge {
+      width: 56px;
+      height: 56px;
+      border-radius: 16px;
+      margin: 0 auto 20px;
+      background: linear-gradient(135deg, #0071D8, #005CB0);
+      display: grid;
+      place-items: center;
+      color: #fff;
+      font-size: 26px;
+      font-weight: 800;
+    }
+    h1 { margin: 0 0 10px; font-size: 28px; }
+    p { margin: 0; color: #475569; line-height: 1.6; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="badge">R</div>
+    <h1>Redirecting you to the app store…</h1>
+    <p>If you are not redirected automatically, choose the app store for your device.</p>
+  </div>
+
+  <script>
+    (function () {
+      var ua = navigator.userAgent || '';
+      var platform = navigator.platform || '';
+      var isAppleDevice = /(iPhone|iPad|iPod)/i.test(ua) || (/Mac/i.test(platform) && navigator.maxTouchPoints > 1);
+      var isAndroidDevice = /Android/i.test(ua);
+      var target = isAppleDevice
+        ? 'https://apps.apple.com/pk/app/raaye-ai-post-generator/id6745610700'
+        : (isAndroidDevice
+          ? 'https://play.google.com/store/apps/details?id=socials.productivity.ai&hl=en'
+          : 'https://play.google.com/store/apps/details?id=socials.productivity.ai&hl=en');
+      window.location.replace(target);
+    })();
+  </script>
+</body>
+</html>

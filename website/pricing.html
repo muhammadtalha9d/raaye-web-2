@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pricing | Raaye</title>
+<meta name="description" content="Simple Raaye pricing that scales with your LinkedIn growth. Start free, then upgrade for unlimited AI generations, full scheduling, trends, engagement and advanced analytics.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&display=block" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<header class="site-header" style="position:fixed; top:0; left:0; right:0; z-index:1000; background:rgba(255,255,255,0.82); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border-bottom:1px solid #E9ECEF; font-family:Inter,system-ui,sans-serif;">
+  <nav style="max-width:1240px; margin:0 auto; height:72px; padding:0 24px; display:flex; align-items:center; justify-content:space-between; gap:20px;">
+    <a href="/index.html" style="display:flex; align-items:center; gap:10px; text-decoration:none; flex-shrink:0;">
+      <img src="/assets/images/raaye-dark.png" alt="Raaye" style="height:36px; width:auto; display:block;">
+    </a>
+
+    <ul style="display:flex; align-items:center; gap:2px; list-style:none; margin:0; padding:0;">
+      <li style="position:relative;" data-dropdown="platform">
+        <button data-trigger style="display:flex; align-items:center; gap:5px; background:none; border:none; cursor:pointer; font-family:inherit; font-size:15px; font-weight:600; color:#343A40; padding:9px 14px; border-radius:9px;" data-hover="background:#F1F3F5;">
+          Platform
+          <span style="display:inline-block; width:7px; height:7px; border-right:2px solid #ADB5BD; border-bottom:2px solid #ADB5BD; transform:rotate(45deg) translateY(-2px);"></span>
+        </button>
+        <div data-panel data-display="grid" style="position:absolute; top:calc(100% + 6px); left:50%; transform:translateX(-50%); display:none; width:760px; background:#fff; border:1px solid #E9ECEF; border-radius:18px; box-shadow:0 24px 60px rgba(16,24,40,0.16); padding:22px; grid-template-columns:repeat(3,1fr); gap:8px;">
+          <div>
+            <p style="margin:0 0 8px; padding:0 12px; font-size:12px; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; color:#0071D8;">Create</p>
+            <a href="/platform/ai-content-generation.html" style="display:block; padding:11px 12px; border-radius:11px; text-decoration:none;" data-hover="background:#F8F9FA;">
+              <span style="display:block; font-size:14.5px; font-weight:600; color:#1A1D23;">AI Content Creation</span>
+              <span style="display:block; font-size:13px; color:#6C757D; margin-top:2px;">Three persona-aligned drafts from one prompt</span>
+            </a>
+            <a href="/platform/scheduling.html" style="display:block; padding:11px 12px; border-radius:11px; text-decoration:none;" data-hover="background:#F8F9FA;">
+              <span style="display:block; font-size:14.5px; font-weight:600; color:#1A1D23;">Scheduling &amp; Calendar</span>
+              <span style="display:block; font-size:13px; color:#6C757D; margin-top:2px;">Plan weeks of posts, then auto-schedule</span>
+            </a>
+            <a href="/platform/ai-content-generation.html#visuals" style="display:block; padding:11px 12px; border-radius:11px; text-decoration:none;" data-hover="background:#F8F9FA;">
+              <span style="display:block; font-size:14.5px; font-weight:600; color:#1A1D23;">AI Images &amp; Infographics</span>
+              <span style="display:block; font-size:13px; color:#6C757D; margin-top:2px;">Generate visuals to match each post</span>
+            </a>
+          </div>
+          <div>
+            <p style="margin:0 0 8px; padding:0 12px; font-size:12px; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; color:#7C3AED;">Engage</p>
+            <a href="/engage/feed.html" style="display:block; padding:11px 12px; border-radius:11px; text-decoration:none;" data-hover="background:#F8F9FA;">
+              <span style="display:block; font-size:14.5px; font-weight:600; color:#1A1D23;">Today's Feed</span>
+              <span style="display:block; font-size:13px; color:#6C757D; margin-top:2px;">A summarized, persona-ranked feed</span>
+            </a>
+            <a href="/engage/engagement.html" style="display:block; padding:11px 12px; border-radius:11px; text-decoration:none;" data-hover="background:#F8F9FA;">
+              <span style="display:block; font-size:14.5px; font-weight:600; color:#1A1D23;">Suggested Engagement</span>
+              <span style="display:block; font-size:13px; color:#6C757D; margin-top:2px;">AI-drafted comments you approve in a click</span>
+            </a>
+            <a href="/engage/trends.html" style="display:block; padding:11px 12px; border-radius:11px; text-decoration:none;" data-hover="background:#F8F9FA;">
+              <span style="display:block; font-size:14.5px; font-weight:600; color:#1A1D23;">Trends &amp; Popular Posts</span>
+              <span style="display:block; font-size:13px; color:#6C757D; margin-top:2px;">Turn trending topics into your own posts</span>
+            </a>
+          </div>
+          <div>
+            <p style="margin:0 0 8px; padding:0 12px; font-size:12px; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; color:#16A34A;">Measure</p>
+            <a href="/measure/analytics.html" style="display:block; padding:11px 12px; border-radius:11px; text-decoration:none;" data-hover="background:#F8F9FA;">
+              <span style="display:block; font-size:14.5px; font-weight:600; color:#1A1D23;">Content Analytics</span>
+              <span style="display:block; font-size:13px; color:#6C757D; margin-top:2px;">See what works, and why</span>
+            </a>
+            <a href="/measure/profile.html" style="display:block; padding:11px 12px; border-radius:11px; text-decoration:none;" data-hover="background:#F8F9FA;">
+              <span style="display:block; font-size:14.5px; font-weight:600; color:#1A1D23;">Profile Optimization</span>
+              <span style="display:block; font-size:13px; color:#6C757D; margin-top:2px;">Sharpen your headline and About</span>
+            </a>
+            <div style="margin:11px 12px 0; padding:16px; border-radius:12px; background:linear-gradient(135deg,#E6F0FC,#F3ECFF);">
+              <span style="display:block; font-size:13.5px; font-weight:700; color:#1A1D23;">One platform, one loop</span>
+              <span style="display:block; font-size:12.5px; color:#495057; margin-top:3px;">Create, schedule, engage and measure without leaving Raaye.</span>
+              <a href="#" style="display:inline-flex; align-items:center; gap:6px; margin-top:12px; background:#0071D8; color:#fff; font-size:12.5px; font-weight:600; padding:9px 14px; border-radius:9px; text-decoration:none; box-shadow:0 6px 16px rgba(0,113,216,0.28);" data-hover="background:#005CB0;">Create your first post <span style="display:inline-block; width:6px; height:6px; border-right:2px solid #fff; border-top:2px solid #fff; transform:rotate(45deg);"></span></a>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li style="position:relative;" data-dropdown="who">
+        <button data-trigger style="display:flex; align-items:center; gap:5px; background:none; border:none; cursor:pointer; font-family:inherit; font-size:15px; font-weight:600; color:#343A40; padding:9px 14px; border-radius:9px;" data-hover="background:#F1F3F5;">
+          Who it's for
+          <span style="display:inline-block; width:7px; height:7px; border-right:2px solid #ADB5BD; border-bottom:2px solid #ADB5BD; transform:rotate(45deg) translateY(-2px);"></span>
+        </button>
+        <div data-panel data-display="block" style="position:absolute; top:calc(100% + 6px); left:50%; transform:translateX(-50%); display:none; width:300px; background:#fff; border:1px solid #E9ECEF; border-radius:18px; box-shadow:0 24px 60px rgba(16,24,40,0.16); padding:12px;">
+          <a href="/who's-it-for/for-founders.html" style="display:block; padding:11px 12px; border-radius:11px; text-decoration:none;" data-hover="background:#F8F9FA;">
+            <span style="display:block; font-size:14.5px; font-weight:600; color:#1A1D23;">Founders &amp; CEOs</span>
+            <span style="display:block; font-size:13px; color:#6C757D; margin-top:2px;">Build authority and attract clients</span>
+          </a>
+          <a href="/who's-it-for/for-creators.html" style="display:block; padding:11px 12px; border-radius:11px; text-decoration:none;" data-hover="background:#F8F9FA;">
+            <span style="display:block; font-size:14.5px; font-weight:600; color:#1A1D23;">Creators &amp; Experts</span>
+            <span style="display:block; font-size:13px; color:#6C757D; margin-top:2px;">Scale ideation without losing your voice</span>
+          </a>
+          <a href="/who's-it-for/for-consultants.html" style="display:block; padding:11px 12px; border-radius:11px; text-decoration:none;" data-hover="background:#F8F9FA;">
+            <span style="display:block; font-size:14.5px; font-weight:600; color:#1A1D23;">Consultants &amp; Coaches</span>
+            <span style="display:block; font-size:13px; color:#6C757D; margin-top:2px;">Turn expertise into a lead channel</span>
+          </a>
+          <a href="/who's-it-for/for-job-seekers.html" style="display:block; padding:11px 12px; border-radius:11px; text-decoration:none;" data-hover="background:#F8F9FA;">
+            <span style="display:block; font-size:14.5px; font-weight:600; color:#1A1D23;">Career Builders</span>
+            <span style="display:block; font-size:13px; color:#6C757D; margin-top:2px;">Stay visible to recruiters and peers</span>
+          </a>
+        </div>
+      </li>
+
+      <li><a href="pricing.html" style="display:block; font-size:15px; font-weight:600; color:#343A40; padding:9px 14px; border-radius:9px; text-decoration:none;" data-hover="background:#F1F3F5;">Pricing</a></li>
+      <li><a href="blog.html" style="display:block; font-size:15px; font-weight:600; color:#343A40; padding:9px 14px; border-radius:9px; text-decoration:none;" data-hover="background:#F1F3F5;">Blog</a></li>
+    </ul>
+
+    <div style="display:flex; align-items:center; gap:14px; flex-shrink:0;">
+      <a href="#" style="font-size:15px; font-weight:600; color:#343A40; text-decoration:none;">Log in</a>
+      <a href="#" style="display:inline-flex; align-items:center; gap:7px; background:#0F1422; color:#fff; font-size:15px; font-weight:600; padding:11px 18px; border-radius:11px; text-decoration:none; box-shadow:0 4px 14px rgba(15,20,34,0.22);" data-hover="background:#1A2236;">
+        Start for free
+        <span style="display:inline-block; width:7px; height:7px; border-right:2px solid #fff; border-top:2px solid #fff; transform:rotate(45deg);"></span>
+      </a>
+    </div>
+  </nav>
+</header>
+
+<div style="font-family:Inter,system-ui,sans-serif; color:#1A1D23; background:#fff; overflow-x:hidden;">
+
+  <section style="padding:128px 24px 48px; background-color:#FBFCFE; background-image:linear-gradient(rgba(0,113,216,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(0,113,216,0.05) 1px, transparent 1px), radial-gradient(900px 460px at 50% 0%, #E6F0FC 0%, rgba(230,240,252,0) 60%); background-size:96px 96px, 96px 96px, 100% 100%; text-align:center;">
+    <div style="max-width:760px; margin:0 auto;">
+      <span style="display:inline-flex; align-items:center; gap:8px; background:#E6F0FC; padding:7px 14px; border-radius:999px; font-size:12.5px; font-weight:700; letter-spacing:0.05em; color:#0071D8; text-transform:uppercase;"><span class="ms" style="font-size:16px;">sell</span>Pricing</span>
+      <h1 style="margin:22px 0 0; font-size:52px; line-height:1.06; font-weight:800; letter-spacing:-0.03em;">Pricing that scales with your <span style="color:#0071D8;">growth</span>.</h1>
+      <p style="margin:20px auto 0; font-size:18.5px; line-height:1.6; color:#495057; max-width:560px;">Start free, no credit card. Upgrade when Raaye is doing the heavy lifting for you. Limit volume, never quality.</p>
+      <div style="display:inline-flex; align-items:center; gap:8px; margin-top:32px; background:#fff; border:1px solid #E0E7F1; padding:5px; border-radius:999px; box-shadow:0 2px 10px rgba(16,24,40,0.05);">
+        <button id="billing-monthly" style="border:none; cursor:pointer; font-family:inherit; font-size:14px; font-weight:600; padding:9px 18px; border-radius:999px; background:#0071D8; color:#fff;">Monthly</button>
+        <button id="billing-annual" style="border:none; cursor:pointer; font-family:inherit; font-size:14px; font-weight:600; padding:9px 18px; border-radius:999px; background:transparent; color:#6C757D; display:flex; align-items:center; gap:7px;">Annual <span style="font-size:11px; font-weight:700; color:#16A34A; background:#E7F7EC; padding:3px 8px; border-radius:999px;">Save 20%</span></button>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:24px 24px 72px; background:#fff;">
+    <div style="max-width:1180px; margin:0 auto; display:grid; grid-template-columns:repeat(3,1fr); gap:22px; align-items:start;">
+      <div style="background:#fff; border:1px solid #E6E9EE; border-radius:22px; padding:32px;">
+        <h2 style="margin:0; font-size:21px; font-weight:800;">Free</h2>
+        <p style="margin:8px 0 0; font-size:14px; color:#6C757D; min-height:40px;">Try the core loop and post your first content.</p>
+        <div style="margin:22px 0 6px; display:flex; align-items:flex-end; gap:6px;"><span style="font-size:46px; font-weight:800; letter-spacing:-0.03em;">$0</span><span style="font-size:15px; color:#868E96; margin-bottom:10px;">/forever</span></div>
+        <a href="#" style="display:block; text-align:center; margin:20px 0 24px; background:#F1F3F5; color:#1A1D23; font-size:15px; font-weight:600; padding:13px; border-radius:12px; text-decoration:none;" data-hover="background:#E9ECEF;">Start for free</a>
+        <ul style="list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:13px;">
+          <li style="display:flex; gap:10px; font-size:14px; color:#495057;"><span class="ms" style="font-size:18px; color:#16A34A;">check</span>10 AI post generations / month</li>
+          <li style="display:flex; gap:10px; font-size:14px; color:#495057;"><span class="ms" style="font-size:18px; color:#16A34A;">check</span>Core AI editing actions</li>
+          <li style="display:flex; gap:10px; font-size:14px; color:#495057;"><span class="ms" style="font-size:18px; color:#16A34A;">check</span>3 scheduled posts</li>
+          <li style="display:flex; gap:10px; font-size:14px; color:#495057;"><span class="ms" style="font-size:18px; color:#16A34A;">check</span>Daily feed summary (limited)</li>
+          <li style="display:flex; gap:10px; font-size:14px; color:#495057;"><span class="ms" style="font-size:18px; color:#16A34A;">check</span>Basic profile review</li>
+        </ul>
+      </div>
+      <div style="background:#0B1020; border:1px solid #0B1020; border-radius:22px; padding:32px; position:relative; box-shadow:0 24px 60px rgba(11,16,32,0.28);">
+        <span style="position:absolute; top:-13px; left:50%; transform:translateX(-50%); background:#0071D8; color:#fff; font-size:12px; font-weight:700; padding:6px 14px; border-radius:999px;">Most popular</span>
+        <h2 style="margin:0; font-size:21px; font-weight:800; color:#fff;">Pro</h2>
+        <p style="margin:8px 0 0; font-size:14px; color:#9AA4B2; min-height:40px;">For professionals serious about growing weekly.</p>
+        <div style="margin:22px 0 6px; display:flex; align-items:flex-end; gap:6px;"><span id="pro-price" style="font-size:46px; font-weight:800; letter-spacing:-0.03em; color:#fff;">$39</span><span style="font-size:15px; color:#6B7585; margin-bottom:10px;">/mo</span></div>
+        <p id="pro-note" style="margin:0; font-size:12.5px; color:#5BA8F5; height:16px;">or $31/mo billed annually</p>
+        <a href="#" style="display:block; text-align:center; margin:20px 0 24px; background:#0071D8; color:#fff; font-size:15px; font-weight:600; padding:13px; border-radius:12px; text-decoration:none; box-shadow:0 10px 26px rgba(0,113,216,0.4);" data-hover="background:#0A82EE;">Start 7-day free trial</a>
+        <ul style="list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:13px;">
+          <li style="display:flex; gap:10px; font-size:14px; color:#C3CAD6;"><span class="ms" style="font-size:18px; color:#5BA8F5;">check</span>Unlimited AI generations</li>
+          <li style="display:flex; gap:10px; font-size:14px; color:#C3CAD6;"><span class="ms" style="font-size:18px; color:#5BA8F5;">check</span>All AI editing actions</li>
+          <li style="display:flex; gap:10px; font-size:14px; color:#C3CAD6;"><span class="ms" style="font-size:18px; color:#5BA8F5;">check</span>Unlimited scheduling &amp; calendar</li>
+          <li style="display:flex; gap:10px; font-size:14px; color:#C3CAD6;"><span class="ms" style="font-size:18px; color:#5BA8F5;">check</span>Full feed summaries &amp; trends</li>
+          <li style="display:flex; gap:10px; font-size:14px; color:#C3CAD6;"><span class="ms" style="font-size:18px; color:#5BA8F5;">check</span>Suggested engagement</li>
+          <li style="display:flex; gap:10px; font-size:14px; color:#C3CAD6;"><span class="ms" style="font-size:18px; color:#5BA8F5;">check</span>Advanced analytics &amp; insights</li>
+          <li style="display:flex; gap:10px; font-size:14px; color:#C3CAD6;"><span class="ms" style="font-size:18px; color:#5BA8F5;">check</span>50 AI image credits / month</li>
+        </ul>
+      </div>
+      <div style="background:#fff; border:1px solid #E6E9EE; border-radius:22px; padding:32px;">
+        <h2 style="margin:0; font-size:21px; font-weight:800;">Basic</h2>
+        <p style="margin:8px 0 0; font-size:14px; color:#6C757D; min-height:40px;">For staying consistent without the full toolkit.</p>
+        <div style="margin:22px 0 6px; display:flex; align-items:flex-end; gap:6px;"><span id="basic-price" style="font-size:46px; font-weight:800; letter-spacing:-0.03em;">$19</span><span style="font-size:15px; color:#868E96; margin-bottom:10px;">/mo</span></div>
+        <p id="basic-note" style="margin:0; font-size:12.5px; color:#0071D8; height:16px;">or $15/mo billed annually</p>
+        <a href="#" style="display:block; text-align:center; margin:20px 0 24px; background:#F1F3F5; color:#1A1D23; font-size:15px; font-weight:600; padding:13px; border-radius:12px; text-decoration:none;" data-hover="background:#E9ECEF;">Start 7-day free trial</a>
+        <ul style="list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:13px;">
+          <li style="display:flex; gap:10px; font-size:14px; color:#495057;"><span class="ms" style="font-size:18px; color:#16A34A;">check</span>100 AI generations / month</li>
+          <li style="display:flex; gap:10px; font-size:14px; color:#495057;"><span class="ms" style="font-size:18px; color:#16A34A;">check</span>All AI editing actions</li>
+          <li style="display:flex; gap:10px; font-size:14px; color:#495057;"><span class="ms" style="font-size:18px; color:#16A34A;">check</span>30 scheduled posts</li>
+          <li style="display:flex; gap:10px; font-size:14px; color:#495057;"><span class="ms" style="font-size:18px; color:#16A34A;">check</span>Full feed summaries</li>
+          <li style="display:flex; gap:10px; font-size:14px; color:#495057;"><span class="ms" style="font-size:18px; color:#16A34A;">check</span>Standard analytics</li>
+          <li style="display:flex; gap:10px; font-size:14px; color:#ADB5BD;"><span class="ms" style="font-size:18px; color:#CED4DA;">remove</span>Trends &amp; AI image credits</li>
+        </ul>
+      </div>
+    </div>
+    <p style="text-align:center; margin:32px auto 0; font-size:13.5px; color:#ADB5BD; max-width:620px;">Prices shown are launch placeholders while plans are finalized. Credits cover premium actions like AI image generation.</p>
+  </section>
+
+  <section style="padding:72px 24px; background:#F8F9FB;">
+    <div style="max-width:1000px; margin:0 auto;">
+      <h2 style="text-align:center; margin:0 0 40px; font-size:34px; font-weight:800; letter-spacing:-0.025em;">Compare what's included</h2>
+      <div style="background:#fff; border:1px solid #EDEFF2; border-radius:18px; overflow:hidden;">
+        <div style="display:grid; grid-template-columns:2fr 1fr 1fr 1fr; align-items:center; padding:16px 22px; border-bottom:1px solid #F1F3F5; background:#fff;">
+          <span style="font-size:14.5px; font-weight:600; color:#343A40;">AI post generations</span>
+          <span style="text-align:center; font-size:13.5px; color:#6C757D;">10 / mo</span>
+          <span style="text-align:center; font-size:13.5px; color:#6C757D;">100 / mo</span>
+          <span style="text-align:center; font-size:13.5px; font-weight:700; color:#0071D8;">Unlimited</span>
+        </div>
+        <div style="display:grid; grid-template-columns:2fr 1fr 1fr 1fr; align-items:center; padding:16px 22px; border-bottom:1px solid #F1F3F5; background:#FBFCFE;">
+          <span style="font-size:14.5px; font-weight:600; color:#343A40;">AI editing actions</span>
+          <span style="text-align:center; font-size:13.5px; color:#6C757D;">Core</span>
+          <span style="text-align:center; font-size:13.5px; color:#6C757D;">All</span>
+          <span style="text-align:center; font-size:13.5px; font-weight:700; color:#0071D8;">All</span>
+        </div>
+        <div style="display:grid; grid-template-columns:2fr 1fr 1fr 1fr; align-items:center; padding:16px 22px; border-bottom:1px solid #F1F3F5; background:#fff;">
+          <span style="font-size:14.5px; font-weight:600; color:#343A40;">Scheduled posts</span>
+          <span style="text-align:center; font-size:13.5px; color:#6C757D;">3</span>
+          <span style="text-align:center; font-size:13.5px; color:#6C757D;">30</span>
+          <span style="text-align:center; font-size:13.5px; font-weight:700; color:#0071D8;">Unlimited</span>
+        </div>
+        <div style="display:grid; grid-template-columns:2fr 1fr 1fr 1fr; align-items:center; padding:16px 22px; border-bottom:1px solid #F1F3F5; background:#FBFCFE;">
+          <span style="font-size:14.5px; font-weight:600; color:#343A40;">Feed summaries</span>
+          <span style="text-align:center; font-size:13.5px; color:#6C757D;">Limited</span>
+          <span style="text-align:center; font-size:13.5px; color:#6C757D;">Full</span>
+          <span style="text-align:center; font-size:13.5px; font-weight:700; color:#0071D8;">Full</span>
+        </div>
+        <div style="display:grid; grid-template-columns:2fr 1fr 1fr 1fr; align-items:center; padding:16px 22px; border-bottom:1px solid #F1F3F5; background:#fff;">
+          <span style="font-size:14.5px; font-weight:600; color:#343A40;">Trends &amp; popular posts</span>
+          <span style="text-align:center; font-size:13.5px; color:#6C757D;">-</span>
+          <span style="text-align:center; font-size:13.5px; color:#6C757D;">-</span>
+          <span style="text-align:center; font-size:13.5px; font-weight:700; color:#0071D8;">Included</span>
+        </div>
+        <div style="display:grid; grid-template-columns:2fr 1fr 1fr 1fr; align-items:center; padding:16px 22px; border-bottom:1px solid #F1F3F5; background:#FBFCFE;">
+          <span style="font-size:14.5px; font-weight:600; color:#343A40;">Suggested engagement</span>
+          <span style="text-align:center; font-size:13.5px; color:#6C757D;">-</span>
+          <span style="text-align:center; font-size:13.5px; color:#6C757D;">Limited</span>
+          <span style="text-align:center; font-size:13.5px; font-weight:700; color:#0071D8;">Included</span>
+        </div>
+        <div style="display:grid; grid-template-columns:2fr 1fr 1fr 1fr; align-items:center; padding:16px 22px; border-bottom:1px solid #F1F3F5; background:#fff;">
+          <span style="font-size:14.5px; font-weight:600; color:#343A40;">Analytics &amp; insights</span>
+          <span style="text-align:center; font-size:13.5px; color:#6C757D;">Basic</span>
+          <span style="text-align:center; font-size:13.5px; color:#6C757D;">Standard</span>
+          <span style="text-align:center; font-size:13.5px; font-weight:700; color:#0071D8;">Advanced</span>
+        </div>
+        <div style="display:grid; grid-template-columns:2fr 1fr 1fr 1fr; align-items:center; padding:16px 22px; border-bottom:1px solid #F1F3F5; background:#FBFCFE;">
+          <span style="font-size:14.5px; font-weight:600; color:#343A40;">AI image credits</span>
+          <span style="text-align:center; font-size:13.5px; color:#6C757D;">-</span>
+          <span style="text-align:center; font-size:13.5px; color:#6C757D;">-</span>
+          <span style="text-align:center; font-size:13.5px; font-weight:700; color:#0071D8;">50 / mo</span>
+        </div>
+        <div style="display:grid; grid-template-columns:2fr 1fr 1fr 1fr; padding:16px 22px; background:#FBFCFE;">
+          <span></span>
+          <span style="text-align:center; font-size:13px; font-weight:700; color:#868E96;">Free</span>
+          <span style="text-align:center; font-size:13px; font-weight:700; color:#868E96;">Basic</span>
+          <span style="text-align:center; font-size:13px; font-weight:700; color:#0071D8;">Pro</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:72px 24px; background:#fff;">
+    <div style="max-width:800px; margin:0 auto;">
+      <h2 style="text-align:center; margin:0 0 36px; font-size:34px; font-weight:800; letter-spacing:-0.025em;">Pricing questions</h2>
+      <div style="display:flex; flex-direction:column; gap:12px;" data-accordion>
+        <div data-faq-item style="border:1px solid #EDEFF2; border-radius:14px; overflow:hidden;">
+          <button data-faq-toggle style="width:100%; display:flex; align-items:center; justify-content:space-between; gap:16px; background:none; border:none; cursor:pointer; font-family:inherit; text-align:left; padding:18px 20px;">
+            <span style="font-size:16px; font-weight:700;">Is there really a free plan?</span>
+            <span class="ms" data-faq-icon style="font-size:22px; color:#0071D8;">remove</span>
+          </button>
+          <div data-faq-panel style="display:block; padding:0 20px 18px; font-size:14.5px; line-height:1.65; color:#6C757D;">Yes. The Free plan never expires and lets you try the core create-and-schedule loop. Paid plans add volume and the full toolkit - we limit volume, not quality.</div>
+        </div>
+        <div data-faq-item style="border:1px solid #EDEFF2; border-radius:14px; overflow:hidden;">
+          <button data-faq-toggle style="width:100%; display:flex; align-items:center; justify-content:space-between; gap:16px; background:none; border:none; cursor:pointer; font-family:inherit; text-align:left; padding:18px 20px;">
+            <span style="font-size:16px; font-weight:700;">What does the 7-day trial include?</span>
+            <span class="ms" data-faq-icon style="font-size:22px; color:#0071D8;">add</span>
+          </button>
+          <div data-faq-panel style="display:none; padding:0 20px 18px; font-size:14.5px; line-height:1.65; color:#6C757D;">The trial gives you full access to your chosen plan so you can experience generations, scheduling, the feed, trends and analytics before paying. No credit card to start.</div>
+        </div>
+        <div data-faq-item style="border:1px solid #EDEFF2; border-radius:14px; overflow:hidden;">
+          <button data-faq-toggle style="width:100%; display:flex; align-items:center; justify-content:space-between; gap:16px; background:none; border:none; cursor:pointer; font-family:inherit; text-align:left; padding:18px 20px;">
+            <span style="font-size:16px; font-weight:700;">How do credits work?</span>
+            <span class="ms" data-faq-icon style="font-size:22px; color:#0071D8;">add</span>
+          </button>
+          <div data-faq-panel style="display:none; padding:0 20px 18px; font-size:14.5px; line-height:1.65; color:#6C757D;">Credits cover premium actions such as AI image and infographic generation. Each plan includes a monthly allowance; you always see how many remain.</div>
+        </div>
+        <div data-faq-item style="border:1px solid #EDEFF2; border-radius:14px; overflow:hidden;">
+          <button data-faq-toggle style="width:100%; display:flex; align-items:center; justify-content:space-between; gap:16px; background:none; border:none; cursor:pointer; font-family:inherit; text-align:left; padding:18px 20px;">
+            <span style="font-size:16px; font-weight:700;">Can I change or cancel my plan?</span>
+            <span class="ms" data-faq-icon style="font-size:22px; color:#0071D8;">add</span>
+          </button>
+          <div data-faq-panel style="display:none; padding:0 20px 18px; font-size:14.5px; line-height:1.65; color:#6C757D;">Anytime, from your billing settings. Upgrade, downgrade or cancel - changes take effect at your next billing date and there are no long-term contracts.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:24px 24px 72px;">
+    <div style="max-width:1240px; margin:0 auto; background:linear-gradient(120deg,#0B1020,#141B30); border-radius:24px; padding:56px; text-align:center;">
+      <h2 style="margin:0; font-size:36px; font-weight:800; color:#fff; letter-spacing:-0.025em;">Try Raaye free for <span style="color:#5BA8F5;">7 days</span></h2>
+      <p style="margin:14px auto 28px; font-size:17px; color:#9AA4B2; max-width:520px;">Full access, no credit card. Cancel anytime.</p>
+      <a href="#" style="display:inline-flex; align-items:center; gap:9px; background:#0071D8; color:#fff; font-size:16px; font-weight:600; padding:15px 28px; border-radius:13px; text-decoration:none; box-shadow:0 12px 30px rgba(0,113,216,0.4);" data-hover="background:#0A82EE;">Start for free <span class="ms" style="font-size:19px;">arrow_forward</span></a>
+    </div>
+  </section>
+
+</div>
+
+<footer style="background:#0B1020; color:#fff; font-family:Inter,system-ui,sans-serif;">
+  <div style="max-width:1240px; margin:0 auto; padding:72px 24px 40px;">
+    <div style="display:grid; grid-template-columns:1.6fr 1fr 1fr 1fr; gap:48px;">
+      <div>
+        <a href="/index.html" style="display:flex; align-items:center; gap:10px; text-decoration:none; margin-bottom:18px;">
+          <img src="/assets/images/raaye-white.png" alt="Raaye" style="height:36px; width:auto; display:block;">
+        </a>
+        <p style="margin:0 0 22px; font-size:14.5px; line-height:1.6; color:#9AA4B2; max-width:300px;">The AI LinkedIn manager that helps busy professionals create, schedule, engage and grow - with far less effort.</p>
+        <div style="display:flex; gap:10px;">
+          <a href="#" style="display:inline-flex; align-items:center; gap:9px; background:#161C2D; border:1px solid #232B3E; padding:9px 14px; border-radius:10px; text-decoration:none;" data-hover="background:#1E2638;">
+            <svg className="w-7 h-7" viewBox="0 0 512 512" fill="currentColor" style="width:18px; height:20px; color:#fff; flex-shrink:0;">
+              <path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/>
+            </svg>
+            <span style="display:flex; flex-direction:column; line-height:1.1;"><span style="font-size:9px; color:#9AA4B2;">GET IT ON</span><span style="font-size:13px; font-weight:600; color:#fff;">Google Play</span></span>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <p style="margin:0 0 16px; font-size:13px; font-weight:700; letter-spacing:0.04em; text-transform:uppercase; color:#5B6678;">Platform</p>
+        <ul style="list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:11px;">
+          <li><a href="content-creation.html" style="font-size:14.5px; color:#C3CAD6; text-decoration:none;" data-hover="color:#fff;">AI Content Creation</a></li>
+          <li><a href="scheduling.html" style="font-size:14.5px; color:#C3CAD6; text-decoration:none;" data-hover="color:#fff;">Scheduling &amp; Calendar</a></li>
+          <li><a href="feed.html" style="font-size:14.5px; color:#C3CAD6; text-decoration:none;" data-hover="color:#fff;">Today's Feed</a></li>
+          <li><a href="engagement.html" style="font-size:14.5px; color:#C3CAD6; text-decoration:none;" data-hover="color:#fff;">Suggested Engagement</a></li>
+          <li><a href="trends.html" style="font-size:14.5px; color:#C3CAD6; text-decoration:none;" data-hover="color:#fff;">Trends &amp; Popular Posts</a></li>
+          <li><a href="analytics.html" style="font-size:14.5px; color:#C3CAD6; text-decoration:none;" data-hover="color:#fff;">Content Analytics</a></li>
+          <li><a href="profile.html" style="font-size:14.5px; color:#C3CAD6; text-decoration:none;" data-hover="color:#fff;">Profile Optimization</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p style="margin:0 0 16px; font-size:13px; font-weight:700; letter-spacing:0.04em; text-transform:uppercase; color:#5B6678;">Who it's for</p>
+        <ul style="list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:11px;">
+          <li><a href="for-founders.html" style="font-size:14.5px; color:#C3CAD6; text-decoration:none;" data-hover="color:#fff;">Founders &amp; CEOs</a></li>
+          <li><a href="for-creators.html" style="font-size:14.5px; color:#C3CAD6; text-decoration:none;" data-hover="color:#fff;">Creators &amp; Experts</a></li>
+          <li><a href="for-consultants.html" style="font-size:14.5px; color:#C3CAD6; text-decoration:none;" data-hover="color:#fff;">Consultants &amp; Coaches</a></li>
+          <li><a href="for-job-seekers.html" style="font-size:14.5px; color:#C3CAD6; text-decoration:none;" data-hover="color:#fff;">Career Builders</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p style="margin:0 0 16px; font-size:13px; font-weight:700; letter-spacing:0.04em; text-transform:uppercase; color:#5B6678;">Company</p>
+        <ul style="list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:11px;">
+          <li><a href="about.html" style="font-size:14.5px; color:#C3CAD6; text-decoration:none;" data-hover="color:#fff;">About Raaye</a></li>
+          <li><a href="pricing.html" style="font-size:14.5px; color:#C3CAD6; text-decoration:none;" data-hover="color:#fff;">Pricing</a></li>
+          <li><a href="blog.html" style="font-size:14.5px; color:#C3CAD6; text-decoration:none;" data-hover="color:#fff;">Blog</a></li>
+          <li><a href="terms.html" style="font-size:14.5px; color:#C3CAD6; text-decoration:none;" data-hover="color:#fff;">Terms of Service</a></li>
+          <li><a href="privacy.html" style="font-size:14.5px; color:#C3CAD6; text-decoration:none;" data-hover="color:#fff;">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="margin-top:56px; padding-top:28px; border-top:1px solid #1C2436; display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap;">
+      <p style="margin:0; font-size:13.5px; color:#6B7585;">&copy; 2026 Raaye. All rights reserved.</p>
+      <p style="margin:0; font-size:13.5px; color:#6B7585;">Built for professionals who want to grow on LinkedIn.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js"></script>
+<script>
+(function () {
+  var monthlyBtn = document.getElementById('billing-monthly');
+  var annualBtn = document.getElementById('billing-annual');
+  var proPrice = document.getElementById('pro-price');
+  var proNote = document.getElementById('pro-note');
+  var basicPrice = document.getElementById('basic-price');
+  var basicNote = document.getElementById('basic-note');
+
+  function setAnnual(annual) {
+    monthlyBtn.style.background = annual ? 'transparent' : '#0071D8';
+    monthlyBtn.style.color = annual ? '#6C757D' : '#fff';
+    annualBtn.style.background = annual ? '#0071D8' : 'transparent';
+    annualBtn.style.color = annual ? '#fff' : '#6C757D';
+    proPrice.textContent = annual ? '$31' : '$39';
+    proNote.textContent = annual ? 'Billed $372 / year' : 'or $31/mo billed annually';
+    basicPrice.textContent = annual ? '$15' : '$19';
+    basicNote.textContent = annual ? 'Billed $180 / year' : 'or $15/mo billed annually';
+  }
+
+  monthlyBtn.addEventListener('click', function () { setAnnual(false); });
+  annualBtn.addEventListener('click', function () { setAnnual(true); });
+})();
+</script>
+</body>
+</html>

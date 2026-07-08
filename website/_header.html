@@ -1,0 +1,102 @@
+<!-- SHARED HEADER TEMPLATE - inline this exact block (with the correct relative asset/link
+     prefix for the page's location) into every page's <body>, right after it opens. -->
+<header class="site-header" style="position:fixed; top:0; left:0; right:0; z-index:1000; background:rgba(255,255,255,0.82); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border-bottom:1px solid #E9ECEF; font-family:Inter,system-ui,sans-serif;">
+  <nav style="max-width:1240px; margin:0 auto; height:72px; padding:0 24px; display:flex; align-items:center; justify-content:space-between; gap:20px;">
+    <a href="/index.html" style="display:flex; align-items:center; gap:10px; text-decoration:none; flex-shrink:0;">
+      <img src="/assets/images/raaye-dark.png" alt="Raaye" style="height:36px; width:auto; display:block;">
+    </a>
+
+    <ul style="display:flex; align-items:center; gap:2px; list-style:none; margin:0; padding:0;">
+      <li style="position:relative;" data-dropdown="platform">
+        <button data-trigger style="display:flex; align-items:center; gap:5px; background:none; border:none; cursor:pointer; font-family:inherit; font-size:15px; font-weight:600; color:#343A40; padding:9px 14px; border-radius:9px;" data-hover="background:#F1F3F5;">
+          Platform
+          <span style="display:inline-block; width:7px; height:7px; border-right:2px solid #ADB5BD; border-bottom:2px solid #ADB5BD; transform:rotate(45deg) translateY(-2px);"></span>
+        </button>
+        <div data-panel data-display="grid" style="position:absolute; top:calc(100% + 6px); left:50%; transform:translateX(-50%); display:none; width:760px; background:#fff; border:1px solid #E9ECEF; border-radius:18px; box-shadow:0 24px 60px rgba(16,24,40,0.16); padding:22px; grid-template-columns:repeat(3,1fr); gap:8px;">
+          <div>
+            <p style="margin:0 0 8px; padding:0 12px; font-size:12px; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; color:#0071D8;">Create</p>
+            <a href="/platform/ai-content-generation.html" style="display:block; padding:11px 12px; border-radius:11px; text-decoration:none;" data-hover="background:#F8F9FA;">
+              <span style="display:block; font-size:14.5px; font-weight:600; color:#1A1D23;">AI Content Creation</span>
+              <span style="display:block; font-size:13px; color:#6C757D; margin-top:2px;">Three persona-aligned drafts from one prompt</span>
+            </a>
+            <a href="/platform/scheduling.html" style="display:block; padding:11px 12px; border-radius:11px; text-decoration:none;" data-hover="background:#F8F9FA;">
+              <span style="display:block; font-size:14.5px; font-weight:600; color:#1A1D23;">Scheduling &amp; Calendar</span>
+              <span style="display:block; font-size:13px; color:#6C757D; margin-top:2px;">Plan weeks of posts, then auto-schedule</span>
+            </a>
+            <a href="/platform/ai-content-generation.html#visuals" style="display:block; padding:11px 12px; border-radius:11px; text-decoration:none;" data-hover="background:#F8F9FA;">
+              <span style="display:block; font-size:14.5px; font-weight:600; color:#1A1D23;">AI Images &amp; Infographics</span>
+              <span style="display:block; font-size:13px; color:#6C757D; margin-top:2px;">Generate visuals to match each post</span>
+            </a>
+          </div>
+          <div>
+            <p style="margin:0 0 8px; padding:0 12px; font-size:12px; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; color:#7C3AED;">Engage</p>
+            <a href="/engage/feed.html" style="display:block; padding:11px 12px; border-radius:11px; text-decoration:none;" data-hover="background:#F8F9FA;">
+              <span style="display:block; font-size:14.5px; font-weight:600; color:#1A1D23;">Today's Feed</span>
+              <span style="display:block; font-size:13px; color:#6C757D; margin-top:2px;">A summarized, persona-ranked feed</span>
+            </a>
+            <a href="/engage/engagement.html" style="display:block; padding:11px 12px; border-radius:11px; text-decoration:none;" data-hover="background:#F8F9FA;">
+              <span style="display:block; font-size:14.5px; font-weight:600; color:#1A1D23;">Suggested Engagement</span>
+              <span style="display:block; font-size:13px; color:#6C757D; margin-top:2px;">AI-drafted comments you approve in a click</span>
+            </a>
+            <a href="/engage/trends.html" style="display:block; padding:11px 12px; border-radius:11px; text-decoration:none;" data-hover="background:#F8F9FA;">
+              <span style="display:block; font-size:14.5px; font-weight:600; color:#1A1D23;">Trends &amp; Popular Posts</span>
+              <span style="display:block; font-size:13px; color:#6C757D; margin-top:2px;">Turn trending topics into your own posts</span>
+            </a>
+          </div>
+          <div>
+            <p style="margin:0 0 8px; padding:0 12px; font-size:12px; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; color:#16A34A;">Measure</p>
+            <a href="/measure/analytics.html" style="display:block; padding:11px 12px; border-radius:11px; text-decoration:none;" data-hover="background:#F8F9FA;">
+              <span style="display:block; font-size:14.5px; font-weight:600; color:#1A1D23;">Content Analytics</span>
+              <span style="display:block; font-size:13px; color:#6C757D; margin-top:2px;">See what works, and why</span>
+            </a>
+            <a href="/measure/profile.html" style="display:block; padding:11px 12px; border-radius:11px; text-decoration:none;" data-hover="background:#F8F9FA;">
+              <span style="display:block; font-size:14.5px; font-weight:600; color:#1A1D23;">Profile Optimization</span>
+              <span style="display:block; font-size:13px; color:#6C757D; margin-top:2px;">Sharpen your headline and About</span>
+            </a>
+            <div style="margin:11px 12px 0; padding:16px; border-radius:12px; background:linear-gradient(135deg,#E6F0FC,#F3ECFF);">
+              <span style="display:block; font-size:13.5px; font-weight:700; color:#1A1D23;">One platform, one loop</span>
+              <span style="display:block; font-size:12.5px; color:#495057; margin-top:3px;">Create, schedule, engage and measure without leaving Raaye.</span>
+              <a href="/download.html" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:6px; margin-top:12px; background:#0071D8; color:#fff; font-size:12.5px; font-weight:600; padding:9px 14px; border-radius:9px; text-decoration:none; box-shadow:0 6px 16px rgba(0,113,216,0.28);" data-hover="background:#005CB0;">Create your first post <span style="display:inline-block; width:6px; height:6px; border-right:2px solid #fff; border-top:2px solid #fff; transform:rotate(45deg);"></span></a>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li style="position:relative;" data-dropdown="who">
+        <button data-trigger style="display:flex; align-items:center; gap:5px; background:none; border:none; cursor:pointer; font-family:inherit; font-size:15px; font-weight:600; color:#343A40; padding:9px 14px; border-radius:9px;" data-hover="background:#F1F3F5;">
+          Who it's for
+          <span style="display:inline-block; width:7px; height:7px; border-right:2px solid #ADB5BD; border-bottom:2px solid #ADB5BD; transform:rotate(45deg) translateY(-2px);"></span>
+        </button>
+        <div data-panel data-display="block" style="position:absolute; top:calc(100% + 6px); left:50%; transform:translateX(-50%); display:none; width:300px; background:#fff; border:1px solid #E9ECEF; border-radius:18px; box-shadow:0 24px 60px rgba(16,24,40,0.16); padding:12px;">
+          <a href="/who's-it-for/for-founders.html" style="display:block; padding:11px 12px; border-radius:11px; text-decoration:none;" data-hover="background:#F8F9FA;">
+            <span style="display:block; font-size:14.5px; font-weight:600; color:#1A1D23;">Founders &amp; CEOs</span>
+            <span style="display:block; font-size:13px; color:#6C757D; margin-top:2px;">Build authority and attract clients</span>
+          </a>
+          <a href="/who's-it-for/for-creators.html" style="display:block; padding:11px 12px; border-radius:11px; text-decoration:none;" data-hover="background:#F8F9FA;">
+            <span style="display:block; font-size:14.5px; font-weight:600; color:#1A1D23;">Creators &amp; Experts</span>
+            <span style="display:block; font-size:13px; color:#6C757D; margin-top:2px;">Scale ideation without losing your voice</span>
+          </a>
+          <a href="/who's-it-for/for-consultants.html" style="display:block; padding:11px 12px; border-radius:11px; text-decoration:none;" data-hover="background:#F8F9FA;">
+            <span style="display:block; font-size:14.5px; font-weight:600; color:#1A1D23;">Consultants &amp; Coaches</span>
+            <span style="display:block; font-size:13px; color:#6C757D; margin-top:2px;">Turn expertise into a lead channel</span>
+          </a>
+          <a href="/who's-it-for/for-job-seekers.html" style="display:block; padding:11px 12px; border-radius:11px; text-decoration:none;" data-hover="background:#F8F9FA;">
+            <span style="display:block; font-size:14.5px; font-weight:600; color:#1A1D23;">Career Builders</span>
+            <span style="display:block; font-size:13px; color:#6C757D; margin-top:2px;">Stay visible to recruiters and peers</span>
+          </a>
+        </div>
+      </li>
+
+      <li><a href="pricing.html" style="display:block; font-size:15px; font-weight:600; color:#343A40; padding:9px 14px; border-radius:9px; text-decoration:none;" data-hover="background:#F1F3F5;">Pricing</a></li>
+      <li><a href="blog.html" style="display:block; font-size:15px; font-weight:600; color:#343A40; padding:9px 14px; border-radius:9px; text-decoration:none;" data-hover="background:#F1F3F5;">Blog</a></li>
+    </ul>
+
+    <div style="display:flex; align-items:center; gap:14px; flex-shrink:0;">
+      <a href="#" style="font-size:15px; font-weight:600; color:#343A40; text-decoration:none;">Log in</a>
+      <a href="/download.html" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:7px; background:#0F1422; color:#fff; font-size:15px; font-weight:600; padding:11px 18px; border-radius:11px; text-decoration:none; box-shadow:0 4px 14px rgba(15,20,34,0.22);" data-hover="background:#1A2236;">
+        Start for free
+        <span style="display:inline-block; width:7px; height:7px; border-right:2px solid #fff; border-top:2px solid #fff; transform:rotate(45deg);"></span>
+      </a>
+    </div>
+  </nav>
+</header>
